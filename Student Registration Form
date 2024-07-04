@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            margin: 15px;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-container input[type="text"],
+        .form-container textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom:  10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container textarea {
+            resize: vertical;
+        }
+        .form-container button {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .form-container .submit-button {
+            background-color: blue;
+            color: white;
+        }
+        .form-container .submit-button:hover {
+            background-color: blue;
+        }
+        .form-container .cancel-button {
+            background-color: blue;
+            color: white;
+        }
+        .form-container .cancel-button:hover {
+            background-color: #e41e1e;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Student Registration Form</h2>
+    <form action="#" method="post">
+        <label for="Roll number"><b>Roll number:</b></label>
+        <input type="text" id="Roll number" name="Roll number" required>
+         
+         <label for="Name"><b>Name:</b></label>
+        <input type="text" id="Name" name="Name" required>
+       
+        <label for="10th percentage"><b>10th percentage:</b></label>
+        <input type="text" id="10th percentage" name="10th percentage" required>
+
+        <label for="12th percentage"><b>12th percentage:</b></label>
+        <input type="text" id="12th percentage" name="12th percentage" required>
+
+        <label for="Degree percentage"><b>Degree percentage:</b></label>
+        <input type="text" id="Degree percentage" name="Degree percentage" required>
+
+        <label for="Department"><b>Department:</b></label>
+         <select>  
+            <option value=""></option>  
+           <option value="IT">IT</option>  
+           <option value="Aero">Aero</option>  
+           <option value="CSE">CSE</option>  
+           <option value="ECE">ECE</option>  
+           <option value="Mech">Mech</option>  
+           <option value="Civil">Civil</option>  
+           <option value="Food Technology">Food Technology</option>  
+          </select>
+        <div class="button-container">
+            <button type="submit" class="submit-button">Submit</button>
+            <button type="button" class="cancel-button" onclick="document.getElementById('application-form').reset();">Cancel</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
